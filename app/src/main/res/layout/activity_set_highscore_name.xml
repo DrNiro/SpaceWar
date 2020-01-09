@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetHighscoreName"
+    android:background="@drawable/gameover_background">
+
+    <TextView
+        android:id="@+id/hs_LBL_congrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grats_msg"
+        android:textSize="35sp"
+        android:fontFamily="@font/arlrdbd"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/hs_LBL_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reached_msg
+"
+        android:textSize="25sp"
+        android:fontFamily="@font/arlrdbd"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/hs_LBL_congrats"
+        android:gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/hs_EDT_setName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:hint="@string/set_name_hint"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/arlrdbd"
+        android:textColorHint="@color/transparent_white"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/hs_BTN_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hs_EDT_setName"
+        android:layout_centerInParent="true"
+        android:text="@string/ok_button_text"
+        android:textSize="24sp"
+        android:fontFamily="@font/arlrdbd"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        />
+
+
+</RelativeLayout>

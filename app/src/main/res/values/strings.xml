@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">HW2_SpaceWar</string>\
+
+    <string-array name="numOfLanesOptions">
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="controlOptions">
+        <item>Buttons</item>
+        <item>Tilt</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- All Layouts Strings -->
+    <string name="coin_LBL">0 </string>
+    <string name="highScore_BTN_text">High \nScore</string>
+    <string name="last_score_LBL">Last Score: 0 m</string>
+    <string name="back_BTN">Back</string>
+    <string name="distance_LBL">0 m</string>
+    <string name="pause_BTN">Pause</string>
+    <string name="control_LBL">Control: </string>
+    <string name="speed_LBL">Speed: </string>
+    <string name="control_TBTN_on">Tilt</string>
+    <string name="control_TBTN_off">Buttons</string>
+    <string name="speed_TBTN_on">Fast</string>
+    <string name="speed_TBTN_off">Slow</string>
+    <string name="list_title">High Scores</string>
+    <string name="ok_button_text">OK</string>
+    <string name="set_name_hint">Set name</string>
+    <string name="grats_msg">Congratulations!</string>
+    <string name="reached_msg">Reached to top 10</string>
+
+
+</resources>

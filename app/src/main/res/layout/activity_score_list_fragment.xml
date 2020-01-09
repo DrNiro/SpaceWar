@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreListFragment">
+
+    <TextView
+        android:id="@+id/frameA_LBL_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/list_title"
+        android:textSize="34sp"
+        android:fontFamily="@font/arlrdbd"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragList_RCLV_scores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameA_LBL_title"
+        android:layout_marginTop="20dp" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

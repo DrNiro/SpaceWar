@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_list_and_map"
+    android:background="@drawable/gameover_background">
+
+    <FrameLayout
+        android:id="@+id/main_LAY_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:layout_above="@+id/highscore_LBL_lastScore"
+        android:layout_marginBottom="5dp">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_LAY_setName"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/transparent"
+        android:layout_centerInParent="true"
+        >
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/highscore_LBL_lastScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/last_score_LBL"
+        android:textSize="30sp"
+        android:fontFamily="@font/arlrdbd"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_above="@+id/map"
+        android:layout_marginBottom="5dp"
+        />
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_above="@+id/highscore_BTN_back"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:id="@+id/highscore_BTN_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_back_btn"
+        />
+
+
+</RelativeLayout>
